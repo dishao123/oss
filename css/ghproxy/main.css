@@ -40,7 +40,7 @@ form {
 }
 
 /* 增加按钮的顶部外边距，使按钮向下移动 */
-form button {
+button.mdui-btn.mdui-btn-raised.mdui-ripple.mdui-color-theme-accent {
   margin-top: 6px; /* 增加顶部外边距 */
 }
 
