@@ -44,7 +44,7 @@ p.mdui-text-center {
 }
 
 /* 给元素上下添加外边距 */
-.y-m-t-b {
+.y-m-t-b-14 {
   margin-top: 14px; /* 上外边距 */
   margin-bottom: 14px; /* 下外边距 */
 }
