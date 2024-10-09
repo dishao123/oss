@@ -17,8 +17,10 @@ input:focus::placeholder {
 
 /* 页脚样式 */
 footer {
-  padding: 5px; /* 内边距为 5px */
-  margin-top: 20px; /* 增加顶部外边距 */
+  display: flex; /* 使用 flex 布局 */
+  justify-content: center; /* 水平方向居中 */
+  align-items: center; /* 垂直方向居中 */
+  padding: 10px; /* 内边距为 10px */
 }
 
 /* 确保输入框和按钮在同一行 */
