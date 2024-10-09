@@ -1,0 +1,46 @@
+/* 使所有图片居中 */
+img {
+  display: block; /* 使图片元素变成块级元素 */
+  margin: 0 auto; /* 水平居中 */
+}
+
+/* 让 placeholder 内容居中 */
+::placeholder {
+  text-align: center; /* 内容居中 */
+}
+
+/* 当输入框获得焦点时，改变 placeholder 的颜色 */
+input:focus::placeholder {
+  color: transparent; /* 透明，使 placeholder 看不见 */
+}
+
+/* 卡片样式 */
+.card-box {
+  margin: 16px auto; /* 上下外边距为 16px，左右自动 */
+  max-width: 400px; /* 最大宽度限制 */
+  min-width: 100px; /* 最小宽度限制 */
+}
+
+/* 页脚样式 */
+footer {
+  padding: 5px; /* 内边距为 5px */
+  margin-top: 20px; /* 增加顶部外边距 */
+}
+
+/* 确保输入框和按钮在同一行 */
+.input-btn-group, form {
+  display: flex; /* 使用 flex 布局 */
+  justify-content: center; /* 使按钮和输入框在水平方向居中 */
+  align-items: center; /* 使按钮和输入框在垂直方向居中 */
+  margin-top: 16px; /* 增加顶部外边距 */
+}
+
+/* 输入框右侧添加间隙 */
+.input-btn-group .mdui-textfield {
+  margin-right: 14px; /* 在输入框和按钮之间添加间隙 */
+}
+
+/* 增加按钮的顶部外边距，使按钮向下移动 */
+.input-btn-group button {
+  margin-top: 6px; /* 增加顶部外边距 */
+}
