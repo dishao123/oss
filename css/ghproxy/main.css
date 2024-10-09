@@ -15,7 +15,7 @@ input:focus::placeholder {
 }
 
 /* 卡片样式 */
-.card-box {
+.mdui-card {
   margin: 16px auto; /* 上下外边距为 16px，左右自动 */
   max-width: 600px; /* 最大宽度限制 */
   min-width: 100px; /* 最小宽度限制 */
