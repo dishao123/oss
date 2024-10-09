@@ -35,7 +35,7 @@ form {
 }
 
 /* 输入框右侧添加间隙 */
-form .mdui-textfield {
+.mdui-textfield {
   margin-right: 14px; /* 在输入框和按钮之间添加间隙 */
 }
 
