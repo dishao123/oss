@@ -1,9 +1,3 @@
-/* 使所有图片居中 */
-img {
-  display: block; /* 使图片元素变成块级元素 */
-  margin: 0 auto; /* 水平居中 */
-}
-
 /* 让 placeholder 内容居中 */
 ::placeholder {
   text-align: center; /* 内容居中 */
