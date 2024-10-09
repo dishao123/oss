@@ -32,7 +32,7 @@ footer {
   display: flex; /* 使用 flex 布局 */
   justify-content: center; /* 使按钮和输入框在水平方向居中 */
   align-items: center; /* 使按钮和输入框在垂直方向居中 */
-  margin-top: 16px; /* 增加顶部外边距 */
+  /*margin-top: 16px;  增加顶部外边距 */
 }
 
 /* 输入框右侧添加间隙 */
