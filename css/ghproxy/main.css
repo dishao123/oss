@@ -42,3 +42,9 @@ button.mdui-btn.mdui-btn-raised.mdui-ripple.mdui-color-theme-accent {
 p.mdui-text-center {
   color: #000000; /* 字体颜色 */
 }
+
+/* 给元素上下添加外边距 */
+.y-m-t-b {
+  margin-top: 14px; /* 上外边距 */
+  margin-bottom: 14px; /* 下外边距 */
+}
