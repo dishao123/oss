@@ -23,7 +23,6 @@ input:focus::placeholder {
 
 /* 页脚样式 */
 footer {
-  display: flex; /* 使用 flex 布局 */
   padding: 5px; /* 内边距为 5px */
   margin-top: 20px; /* 增加顶部外边距 */
 }
