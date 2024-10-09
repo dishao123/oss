@@ -28,23 +28,23 @@ footer {
 }
 
 /* 确保输入框和按钮在同一行 */
-.input-btn-group, form {
+form {
   display: flex; /* 使用 flex 布局 */
   justify-content: center; /* 使按钮和输入框在水平方向居中 */
   align-items: center; /* 使按钮和输入框在垂直方向居中 */
 }
 
 /* 输入框右侧添加间隙 */
-.input-btn-group .mdui-textfield {
+form .mdui-textfield {
   margin-right: 14px; /* 在输入框和按钮之间添加间隙 */
+}
+
+/* 增加按钮的顶部外边距，使按钮向下移动 */
+form button {
+  margin-top: 6px; /* 增加顶部外边距 */
 }
 
 /* 描述文字样式 */
 p.mdui-text-center {
   color: #000000; /* 字体颜色 */
-}
-
-/* 增加按钮的顶部外边距，使按钮向下移动 */
-.input-btn-group button {
-  margin-top: 6px; /* 增加顶部外边距 */
 }
