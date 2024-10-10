@@ -38,4 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-
+window.addEventListener('hashchange', function() {
+  if (window.location.hash === '#link-list') {
+    history.replaceState(null, null, ' ');
+  }
+});
