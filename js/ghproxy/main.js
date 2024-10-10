@@ -50,5 +50,10 @@ document.addEventListener('DOMContentLoaded', function () {
     inputField.placeholder = '';  // 清空 placeholder 的内容
   });
 
+  // 如果希望在输入框失去焦点后恢复 placeholder
+  inputField.addEventListener('blur', function() {
+    inputField.placeholder = '输入需要加速的链接';  // 恢复 placeholder 的内容
+  });
 });
+
 
