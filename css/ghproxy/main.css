@@ -48,3 +48,7 @@ p.mdui-text-center {
 html {
   scroll-behavior: smooth;
 }
+
+#backToTop {
+  display: none; /* 初始时隐藏 */
+  }
