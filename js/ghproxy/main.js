@@ -41,3 +41,14 @@ window.addEventListener('hashchange', function() {
     history.replaceState(null, null, ' ');
   }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const inputField = document.querySelector('input'); // 获取输入框元素
+
+  // 监听输入框的 focus 事件（当输入框获得焦点时触发）
+  inputField.addEventListener('focus', function() {
+    inputField.placeholder = '';  // 清空 placeholder 的内容
+  });
+
+});
+
