@@ -44,3 +44,7 @@ button.mdui-btn.mdui-btn-raised.mdui-ripple.mdui-color-theme-accent {
 p.mdui-text-center {
   color: #000000; /* 字体颜色 */
 }
+
+html {
+  scroll-behavior: smooth;
+}
