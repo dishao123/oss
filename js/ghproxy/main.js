@@ -16,27 +16,25 @@ function toSubmit(e) {
 
 // 回到顶部功能
 document.addEventListener('DOMContentLoaded', function () {
-  const backToTopButton = document.getElementById('backToTop');
+  const backToTopButton = document.getElementById('top-btn');
   
   // 点击回到顶部按钮的事件
   backToTopButton.addEventListener('click', function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smooth' });  // 平滑滚动到顶部
   });
 
-  // 监听页面滚动事件（适用于桌面）
-  window.addEventListener('scroll', toggleBackToTopButton);
-  
-  // 监听触摸滚动事件（适用于移动设备）
-  window.addEventListener('touchmove', toggleBackToTopButton);
-
-  function toggleBackToTopButton() {
+  // 监听页面滚动事件，显示或隐藏按钮
+  window.addEventListener('scroll', function() {
     if (window.scrollY > 300) {
-      backToTopButton.style.display = 'block';
+      // 使用 mdui 框架的 show 方法
+      backToTopButton.classList.remove('mdui-fab-hide');
     } else {
-      backToTopButton.style.display = 'none';
+      // 使用 mdui 框架的 hide 方法
+      backToTopButton.classList.add('mdui-fab-hide');
     }
-  }
+  });
 });
+
 
 window.addEventListener('hashchange', function() {
   if (window.location.hash === '#link-list') {
