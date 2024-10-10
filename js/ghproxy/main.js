@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // 页面滚动时控制按钮显示或隐藏
   window.addEventListener('scroll', function() {
-    if (window.scrollY > 250) {
+    if (window.scrollY > 240) {
       backToTopButton.style.display = 'block';
     } else {
       backToTopButton.style.display = 'none';
