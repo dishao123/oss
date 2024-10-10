@@ -3,11 +3,6 @@
   text-align: center; /* 内容居中 */
 }
 
-/* 当输入框获得焦点时，改变 placeholder 的颜色 
-input:focus::placeholder {
-  color: transparent; /* 透明，使 placeholder 看不见 
-}*/
-
 /* 卡片样式 */
 .mdui-card {
   margin: 16px auto; /* 上下外边距为 16px，左右自动 */
