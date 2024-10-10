@@ -14,22 +14,28 @@ function toSubmit(e) {
   return false;
 }
 
-// 回到顶部功能的脚本
+// 回到顶部功能
 document.addEventListener('DOMContentLoaded', function () {
   const backToTopButton = document.getElementById('backToTop');
   
+  // 点击回到顶部按钮的事件
   backToTopButton.addEventListener('click', function() {
-    console.log("回到顶部按钮被点击了"); // 调试用，检查是否点击事件触发
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  });  
+  });
 
-  // 页面滚动时控制按钮显示或隐藏
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > 230) {
+  // 监听页面滚动事件（适用于桌面）
+  window.addEventListener('scroll', toggleBackToTopButton);
+  
+  // 监听触摸滚动事件（适用于移动设备）
+  window.addEventListener('touchmove', toggleBackToTopButton);
+
+  function toggleBackToTopButton() {
+    if (window.scrollY > 300) {
       backToTopButton.style.display = 'block';
     } else {
       backToTopButton.style.display = 'none';
     }
-  });
+  }
 });
+
 
